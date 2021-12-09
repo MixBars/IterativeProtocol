@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IterativeProtocol
 {
-    public partial class Form1 : Form
+    public partial class window_connection : Form
     {
-        public Form1()
+        public window_connection()
         {
             InitializeComponent();
         }

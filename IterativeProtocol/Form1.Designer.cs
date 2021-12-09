@@ -1,7 +1,7 @@
 ﻿
 namespace IterativeProtocol
 {
-    partial class Form1
+    partial class window_connection
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,67 +29,67 @@ namespace IterativeProtocol
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.copy_IP = new System.Windows.Forms.Button();
+            this.label_current_IP = new System.Windows.Forms.Label();
+            this.connect_to_correspondent = new System.Windows.Forms.Button();
+            this.hint_1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // copy_IP
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(471, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 35);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Скопировать IP";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.copy_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.copy_IP.Location = new System.Drawing.Point(471, 12);
+            this.copy_IP.Name = "copy_IP";
+            this.copy_IP.Size = new System.Drawing.Size(150, 35);
+            this.copy_IP.TabIndex = 0;
+            this.copy_IP.Text = "Скопировать IP";
+            this.copy_IP.UseVisualStyleBackColor = true;
+            this.copy_IP.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // label_current_IP
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Ваш IP:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label_current_IP.AutoSize = true;
+            this.label_current_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_current_IP.Location = new System.Drawing.Point(11, 12);
+            this.label_current_IP.Name = "label_current_IP";
+            this.label_current_IP.Size = new System.Drawing.Size(96, 29);
+            this.label_current_IP.TabIndex = 1;
+            this.label_current_IP.Text = "Ваш IP:";
+            this.label_current_IP.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button2
+            // connect_to_correspondent
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(471, 67);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 35);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Подключиться";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.connect_to_correspondent.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.connect_to_correspondent.Location = new System.Drawing.Point(471, 67);
+            this.connect_to_correspondent.Name = "connect_to_correspondent";
+            this.connect_to_correspondent.Size = new System.Drawing.Size(150, 35);
+            this.connect_to_correspondent.TabIndex = 2;
+            this.connect_to_correspondent.Text = "Подключиться";
+            this.connect_to_correspondent.UseVisualStyleBackColor = true;
+            this.connect_to_correspondent.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label2
+            // hint_1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(12, 62);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(420, 40);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Отправьте ваш IP корреспонденту и ждите\r\nзапрос на подключение или подключитесь с" +
+            this.hint_1.AutoSize = true;
+            this.hint_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.hint_1.Location = new System.Drawing.Point(12, 62);
+            this.hint_1.Name = "hint_1";
+            this.hint_1.Size = new System.Drawing.Size(420, 40);
+            this.hint_1.TabIndex = 3;
+            this.hint_1.Text = "Отправьте ваш IP корреспонденту и ждите\r\nзапрос на подключение или подключитесь с" +
     "ами";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.hint_1.Click += new System.EventHandler(this.label2_Click);
             // 
-            // Form1
+            // window_connection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(633, 114);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Controls.Add(this.hint_1);
+            this.Controls.Add(this.connect_to_correspondent);
+            this.Controls.Add(this.label_current_IP);
+            this.Controls.Add(this.copy_IP);
+            this.Name = "window_connection";
             this.Text = "Iterative Protocol";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -99,10 +99,10 @@ namespace IterativeProtocol
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button copy_IP;
+        private System.Windows.Forms.Label label_current_IP;
+        private System.Windows.Forms.Button connect_to_correspondent;
+        private System.Windows.Forms.Label hint_1;
     }
 }
 
