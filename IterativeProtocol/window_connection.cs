@@ -14,7 +14,14 @@ namespace IterativeProtocol
     {
         public window_connection()
         {
+
             InitializeComponent();
+            // Получение имени компьютера.
+            String host = System.Net.Dns.GetHostName();
+            // Получение ip-адреса.
+            System.Net.IPAddress ip = System.Net.Dns.GetHostByName(host).AddressList[0];
+            // Показ адреса в label'е.
+            host_ip.Text = ip.ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -34,7 +41,10 @@ namespace IterativeProtocol
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            connect_to_correspondent newForm = new connect_to_correspondent();
+            newForm.Show();
+            this.Hide();
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -43,6 +53,11 @@ namespace IterativeProtocol
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(host_ip.Text, TextDataFormat.UnicodeText);
+        }
+
+        private void host_ip_Click(object sender, EventArgs e)
         {
 
         }

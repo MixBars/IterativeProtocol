@@ -33,6 +33,7 @@ namespace IterativeProtocol
             this.label_current_IP = new System.Windows.Forms.Label();
             this.connect_to_correspondent = new System.Windows.Forms.Button();
             this.hint_1 = new System.Windows.Forms.Label();
+            this.host_ip = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // copy_IP
@@ -80,15 +81,28 @@ namespace IterativeProtocol
     "ами";
             this.hint_1.Click += new System.EventHandler(this.label2_Click);
             // 
+            // host_ip
+            // 
+            this.host_ip.AutoSize = true;
+            this.host_ip.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.host_ip.Location = new System.Drawing.Point(103, 12);
+            this.host_ip.Name = "host_ip";
+            this.host_ip.Size = new System.Drawing.Size(187, 29);
+            this.host_ip.TabIndex = 4;
+            this.host_ip.Text = "000.000.000.000";
+            this.host_ip.Click += new System.EventHandler(this.host_ip_Click);
+            // 
             // window_connection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(633, 114);
+            this.Controls.Add(this.host_ip);
             this.Controls.Add(this.hint_1);
             this.Controls.Add(this.connect_to_correspondent);
             this.Controls.Add(this.label_current_IP);
             this.Controls.Add(this.copy_IP);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "window_connection";
             this.Text = "Iterative Protocol";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -103,6 +117,7 @@ namespace IterativeProtocol
         private System.Windows.Forms.Label label_current_IP;
         private System.Windows.Forms.Button connect_to_correspondent;
         private System.Windows.Forms.Label hint_1;
+        private System.Windows.Forms.Label host_ip;
     }
 }
 
